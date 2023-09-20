@@ -14,8 +14,8 @@ public class jpaMain {
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try{
-            Member member = new Member(110L, "member200");
-            em.persist(member);
+            // Member member = new Member(110L, "member200");
+            // em.persist(member);
 
             em.flush();
 
