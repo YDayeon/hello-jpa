@@ -14,10 +14,10 @@ public class jpaMain {
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try{
-            // Member member = new Member(110L, "member200");
-            // em.persist(member);
+            Member member = new Member();
+            member.setUsername("Aa");
 
-            em.flush();
+            em.persist(member);
 
             tx.commit();
         }catch(Exception e) {
